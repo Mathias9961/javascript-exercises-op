@@ -16,12 +16,18 @@ const multiply = function(multiplyArray) {
   return multiplyArray.reduce((total, number) => total * number, 1);
 };
 
-const power = function() {
-	
+const power = function(base, exp) {
+	return base ** exp;
 };
 
-const factorial = function() {
-	
+const factorial = function(toNumber) {
+  let factorialArray = [1];
+  
+  for (let i = 1; i <= toNumber; i++) {
+    factorialArray.push(i);
+  }
+
+  return factorialArray.reduce((fact, number) => fact * number, 1);
 };
 
 // Do not edit below this line
