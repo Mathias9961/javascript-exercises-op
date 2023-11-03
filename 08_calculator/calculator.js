@@ -8,12 +8,12 @@ const subtract = function(number1, number2) {
 };
 
 const sum = function(sumArray) {
-	let totalSum = sumArray.reduce((total, number) => {return total + number}, 0);
+	let totalSum = sumArray.reduce((total, number) => total + number, 0);
   return totalSum;
 };
 
-const multiply = function(number1, number2) {
-
+const multiply = function(multiplyArray) {
+  return multiplyArray.reduce((total, number) => total * number, 1);
 };
 
 const power = function() {
